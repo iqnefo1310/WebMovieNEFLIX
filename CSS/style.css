@@ -1,0 +1,112 @@
+*{
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../assets/lg-bgn.jpg);
+    background-size: cover;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.login-form h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.input-group {
+    margin: 10px 10px;
+}
+
+.input-group input {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+}
+
+.input-group input::placeholder {
+    color: #8c8c8c;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e50914;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #f40612;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9em;
+}
+
+.signup-now {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.signup-now a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.pass-container {
+    display: flex;
+}
+
+#showtg {
+    padding-left: 10px;
+}
+
+.bx-show {
+    z-index: 998;
+    color: white; 
+}
+
+@media (max-width: 600px) {
+    .login-form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .login-form h1 {
+        font-size: 1.5em;
+    }
+}

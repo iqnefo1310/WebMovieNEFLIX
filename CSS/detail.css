@@ -1,0 +1,179 @@
+
+h1.title {
+    width: 100%;
+    background-color: rgba(127, 147, 167, 0.501);
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+section.vid {
+    width: 100%;
+    display: flex;
+}
+
+iframe.frame-embed {
+    width: 50%;
+}
+
+.container-header-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 600px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 2px red solid;
+}
+
+figcaption p {
+    margin-top: 10px;
+}
+
+.cast {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    gap: 10px;
+    align-items: center;
+    background-color: rgb(5, 5, 53);
+    border: 1px solid red;
+}
+
+.cast::-webkit-scrollbar {
+    background-color: rgb(5, 5, 48);
+}
+
+.cast::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+
+.cast figure {
+    /* background-color: antiquewhite; */
+    display: block;
+    text-align: center;
+    width: 200px;
+    height: 15vw;
+    padding: 10px;
+}
+
+.cast figure img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Ensures images maintain aspect ratio */
+}
+
+/* bagian rekomen dan similar */
+
+.list-movie {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 255, 0.37);
+    gap: 20px;
+    align-items: center;
+}
+
+.list-movie figure {
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(21, 25, 25);
+
+    >a img {
+        border-radius: 10px;
+        width: 200px;
+        height: 90%;
+        object-fit: cover;
+    }
+
+    >figcaption {
+        padding: 5px;
+        width: 200px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width:1200px) {
+    section.vid {
+        display: block;
+    }
+
+    .container-header-detail {
+        width: 100%;
+        height: 2%;
+    }
+
+    iframe.frame-embed {
+        width: 100%;
+        height: 50vw;
+        border: none;
+
+    }
+
+    .cast {
+        height: 30vw;
+        align-items: center;
+    }
+
+    .cast figure img {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .cast figure {
+        display: block;
+        text-align: center;
+        width: 200px;
+    }
+
+    .cast figure figcaption p {
+        font-size: 1vw;
+    }
+
+    .header-detail p {
+        font-size: 2vw;
+    }
+
+    .frame-cont .title {
+        font-size: 4vw;
+    }
+
+    /* rekomen dan similar */
+    .list-movie {
+        width: 100%;
+        height: 50vw;
+    }
+
+    .list-movie figure {
+        border-radius: 5px;
+        width: 20vw;
+        height: 36vw;
+
+        >a img {
+            border-radius: 5px;
+            width: 20vw;
+            height: 30vw;
+        }
+
+        >figcaption {
+            padding: 5px;
+            width: 20vw;
+            font-size: 2vw;
+        }
+    }
+
+}
