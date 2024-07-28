@@ -1,4 +1,4 @@
-let url = new URLSearchParams(location.search);
+let url = new URLSearchParams(windows.location.search);
 let idMovie = url.get('id');
 const embedLink = 'https://www.youtube.com/embed/';
 const pictureLink = 'https://image.tmdb.org/t/p/w600_and_h900_bestv2';
